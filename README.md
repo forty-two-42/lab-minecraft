@@ -1,39 +1,50 @@
-GET MINECRAFT
+## Minecraft with Scratch and Python
 
-1. Download bukkit minecraft server
+Summer project for getting my boys into the joys of programming. Let's
+run some scratch scripts and build the world.
 
-   https://getbukkit.org/
+---
 
-2. Get java 1.8
+### Development Environment
 
-3. Start server
+#### Minecraft
 
-   java -Xmx1024M -Xms1024M -jar craftbukkit-1.12.jar
+1. Download *CraftBukkit 1.12* (modified Minecraft server that supports plugins) from [getbukkit.org](https://getbukkit.org/)
 
-4. Get minecraft client (buy user)
+1. Install [java](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+   version 1.8
 
-   https://minecraft.net
+1. Start Minecraft server   `java -Xmx1024M -Xms1024M -jar craftbukkit-1.12.jar`
 
-5. start Minecraft Launcher and create profile for 
-   Launch options
-   Create new profile for version 'release 1.12'
+1. Download and install Minecraft Launcher (buy `<minecraft_user>` or more if you what to explore the
+   world together) from [minecraft.net](https://minecraft.net)
 
-6. start the client with created profile
+1. Start the launcher and create a new profile.
+   * name: Raspberry Juice
+   * version: release 1.12
 
-7. Select multiplayer, add server localhost, join server
+   Take note of the `<game_directory>`. You'll need it later
 
-8. Set pause on focus to false
-   mac /Users/<<user>>/Library/Application Support/minecraft
-   win C:\Users\<<user>>\AppData\Roaming\.minecraft
-   vim options.txt
-   pauseOnLostFocus:false
-   restart the client game
+1. Start the client with the created profile by pressing PLAY button
 
-9. Set the server
-   gamemode creative <<minecraft_user>>
-   op <<minecraft_user>>
+1. Select Multiplayer and Add Server. Use localhost for server address
 
-GET PLUG-IN
+![Add Server](images/add_server.png)
+
+![Join Server](images/join_server.png)
+
+1. Disable pause on focus so you can see the changes
+
+   * go to `<game_directory>` and edit `vim options.txt`
+   * set `pauseOnLostFocus:false`
+   * restart the client
+
+1. Change game settings. Find the terminal where game server is running. Change game mode to
+   creative and make yourself an operator.
+   * `gamemode creative <minecraft_user>`
+   * `op <minecraft_user>`
+
+#### Install plugin
 
 1. stop the server
    stop
@@ -51,7 +62,7 @@ game version 1.12 16+
 https://github.com/zhuowei/RaspberryJuice
 
 
-
+:
 
 https://github.com/jbaragry/mcpi-scratch
 
