@@ -1,6 +1,8 @@
 # Upgrade instructions
 
-Also available on 
+Also available on
+
+https://github.com/miharothl/lab-minecraft/blob/master/README-UPGRADE.md
 
 ## Login to server
 ```
@@ -8,18 +10,18 @@ ssh -i .aws-key app@games.rothl.com
 ```
 ## Stop the mincraft in minecraft
 
-Check if game is still running
+Check if game is still running using
 ```
 ps a
 ```
 
-For example look for COMMAND java -Xmx3G -Xms3G -jar craftbukkit-1.15.2.jar nogui and get PID 7060
+Look for COMMAND java -Xmx3G -Xms3G -jar craftbukkit.latest nogui and get PID, for example 1205
 ```
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 app       1205 42.2 63.7 5926820 2538784 pts/0 Sl   08:07  11:41 java -Xmx3G -Xms3G -jar craftbukkit-1.15.2.jar nogui
 ```
 
-Kill the process
+Kill the process using
 ```
 kill 1205
 ```
@@ -49,14 +51,14 @@ tail -f minecraft.log
 
 # Usefull commands
 
-pwd - print working directory
-whoami - to check what is my username
+* `pwd` - print working directory
+* `whoami` - to check what is my username
 
 
 # Important directories
 
-/home/app - home for application user
-/srv/minecraft - thats where the mincraft game is stored
+* `/home/app` - home for application user
+* `/srv/minecraft` - that's where the mincraft game is stored
 
 
 
