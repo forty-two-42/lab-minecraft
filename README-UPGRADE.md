@@ -15,7 +15,7 @@ Check if game is still running using
 ps a
 ```
 
-Look for COMMAND java -Xmx3G -Xms3G -jar craftbukkit.latest nogui and get PID, for example 1205
+Look for COMMAND `java -Xmx3G -Xms3G -jar craftbukkit.latest nogui` and get PID, for example `1205`
 ```
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 app       1205 42.2 63.7 5926820 2538784 pts/0 Sl   08:07  11:41 java -Xmx3G -Xms3G -jar craftbukkit-1.15.2.jar nogui
