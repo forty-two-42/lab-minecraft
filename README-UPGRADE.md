@@ -6,7 +6,7 @@ https://github.com/miharothl/lab-minecraft/blob/master/README-UPGRADE.md
 
 ## Login to server
 ```
-ssh -i .aws-key app@games.rothl.com
+ssh app@games.rothl.com
 ```
 ## Stop the mincraft in minecraft
 
